@@ -166,6 +166,14 @@
   z-index: 1000;
 }
 
+.fa-xmark {
+  z-index: 10;
+  color: white;
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+}
+
 .offcanvas ul {
   list-style: none;
   padding: 0;
@@ -465,21 +473,17 @@ Delhi real estate destination css  =============== */
 }
 
 .SCHEDULE_BTN {
-  background-color: #007bff; /* Initial background color */
-  color: white; /* Text color */
-  padding: 10px 20px; /* Padding */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s; /* Smooth transition */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
   font-weight: 500;
   font-size: 1.2rem;
   margin-top: 1.4rem;
-}
-
-.SCHEDULE_BTN:hover {
   background-color: transparent;
-  border: 1px solid white;
+  border: 2px solid greenyellow;
 }
 
 /* ======================================= */
@@ -648,8 +652,12 @@ Delhi real estate destination css  =============== */
     display: flex;
   }
 
-  .offcanvas {
-    width: 200px;
+  /* .offcanvas {
+    width: 400px;
+  } */
+
+  .offcanvas.open {
+    width: 100%;
   }
 
   .call-now {
@@ -792,19 +800,6 @@ Delhi real estate destination css  =============== */
     font-size: 2.8rem; /* Adjust the font size as needed */
     margin-bottom: 1rem;
     font-weight: 400;
-  }
-
-  .SCHEDULE_BTN {
-    background-color: #007bff; /* Initial background color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition */
-    font-weight: 500;
-    font-size: 1.2rem;
-    margin-top: 1.4rem;
   }
 
   .Our_Listingss h3 {

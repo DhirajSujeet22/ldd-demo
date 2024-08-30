@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const burger = document.querySelector(".burger");
+  const burger = document.querySelectorAll(".burger");
   const offcanvas = document.querySelector(".offcanvas");
   const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
 
+  console.log(burger);
   // Toggle offcanvas menu for mobile
-  burger.addEventListener("click", function () {
-    offcanvas.classList.toggle("open");
+  burger.forEach((item) => {
+    item.addEventListener("click", function () {
+      offcanvas.classList.toggle("open");
+    });
   });
 
   // Toggle dropdown menus on click for both desktop and mobile
