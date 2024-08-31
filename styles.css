@@ -1,0 +1,850 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ==================== Navbar css  ============================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: transparent;
+  position: absolute;
+  z-index: 19;
+  width: 100%;
+  color: #fff;
+}
+
+.navbar-logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  width: 120px;
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.call-now {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: greenyellow;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725ac1;
+}
+
+.call-now:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #725ac1;
+}
+
+.call-now:active {
+  transform: scale(0.9);
+}
+
+.call-now-drop {
+  position: relative;
+  padding: 12px 10px;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #725ac1;
+}
+
+/* .call-now-drop:hover {
+  background-color: #e76f51;
+}
+
+.call-now:hover {
+  background-color: #e76f51;
+} */
+
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: #444;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 20rem;
+  width: auto;
+}
+
+.dropdown-menu li {
+  padding: 5px 20px;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.offcanvas {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 150px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.fa-xmark {
+  z-index: 10;
+  color: white;
+  position: absolute;
+  right: 1rem;
+  font-size: 1.5rem;
+}
+
+.offcanvas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.offcanvas ul li {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.offcanvas ul a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.offcanvas ul .dropdown-menu {
+  position: static;
+  display: none;
+  background-color: #444;
+  padding: 10px 0;
+  margin: 10px 0 0 0;
+  border-radius: 5px;
+}
+
+.offcanvas ul .dropdown-menu li {
+  padding: 5px 20px;
+}
+
+.offcanvas ul .dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0;
+}
+
+.offcanvas ul .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.offcanvas ul .dropdown-menu a:hover {
+  background-color: #555;
+}
+
+.offcanvas.open {
+  left: 0;
+}
+
+/* =============== Image slider with swiper css  =============== */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-content h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 54px;
+  text-align: center;
+  z-index: 2;
+  margin: 0;
+  font-size: 5rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.slide-content button {
+  position: absolute; /* Position the h2 absolutely within the slide */
+  top: 80%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  font-size: 24px;
+  z-index: 2;
+  padding: 1rem 2rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================= Both --> Real Estate Consultant /
+Delhi real estate destination css  =============== */
+
+.realSate {
+  padding: 0 3rem;
+}
+.realSate h3 {
+  text-align: center;
+  font-size: 50px;
+  color: #3f4448;
+  margin-top: 2rem;
+}
+
+.realSatebox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 8rem;
+}
+
+.about h4 {
+  font-size: 30px;
+  color: #3f4448;
+  text-transform: uppercase;
+}
+
+.about p {
+  color: #9ea0a6;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1.5rem 0;
+  line-height: 1.6rem;
+}
+
+.about button {
+  color: #c1aa86;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  transition: color 0.5s linear, background-color 0.5s linear;
+}
+
+.about button:hover {
+  background-color: #c1aa86;
+  color: white;
+}
+
+.about_img img {
+  width: 600px;
+  height: 600;
+  box-shadow: 0px 0px 7px rgb(6, 54, 57);
+  border-radius: 0.4rem;
+}
+
+/* ================= Running Numbers css  =============== */
+
+.numbers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  margin: 10rem 0;
+  flex-wrap: wrap;
+}
+
+.num {
+  padding: 0.2rem 0.2rem;
+}
+
+.num h4 {
+  font-size: 36px;
+}
+
+.num p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ============== Real state cards section css =============== */
+
+.imagesBuild {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 7rem 0;
+}
+
+.imagesBuild img {
+  width: 380px;
+  height: 300px;
+  overflow: hidden;
+  transition: scale 0.3s ease;
+  border-radius: 0.5rem;
+  filter: brightness(0.7);
+}
+
+.zoom_in {
+  width: 380px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.imagesBuild img:hover {
+  scale: 1.2;
+  filter: brightness(0.8);
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: 600;
+  width: 100%;
+  opacity: 0.8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.centered-text span {
+  padding: 0.7rem 2.5rem;
+  position: relative;
+  top: 1.8rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  background-color: #f0edeb;
+  border-radius: 0.4rem;
+  color: #000;
+  cursor: pointer;
+}
+
+/* ======================================= */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* Semi-transparent black */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.content {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content h2 {
+  font-size: 4rem; /* Adjust the font size as needed */
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.content h2 span {
+  font-size: 5rem; /* Adjust the font size as needed */
+}
+
+.SCHEDULE_BTN {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 1.4rem;
+  background-color: transparent;
+  border: 2px solid greenyellow;
+}
+
+/* ======================================= */
+
+.Our_Listingss {
+  padding: 1rem 4rem;
+}
+
+.Our_Listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 4rem 3rem;
+  margin: 0.5rem 0 7rem 0;
+}
+
+.Our_Listingss h3 {
+  text-align: center;
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  color: #3f4448;
+  font-weight: 700;
+  line-height: 3rem;
+  margin: 2rem 0rem;
+}
+
+.Our_Listingss h3 span {
+  font-size: 1.5rem;
+}
+
+.Our_Listings img {
+  width: 390px;
+  height: 250px;
+  overflow: hidden;
+  transition: scale 0.3s ease;
+  filter: brightness(0.8);
+}
+
+.Our_Listings .zoom_in {
+  width: 390px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.Our_Listings img:hover {
+  scale: 1.2;
+  filter: brightness(0.9);
+}
+
+/* ======================================= */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-columns: repeat(3, 1fr); */
+  justify-content: center;
+  align-items: center;
+  gap: 4rem 2rem;
+  margin: 0.5rem 0 7rem 0;
+}
+
+.footer-column {
+  /* flex: 1; */
+
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-bottom .social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-bottom .social-icons li {
+  margin-right: 15px;
+}
+
+.footer-bottom .social-icons li a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-bottom .social-icons li a:hover {
+  color: #fff;
+}
+
+/* Responsive Styles */
+
+/* ======================================= */
+
+.fa-square-whatsapp {
+  position: fixed;
+  bottom: 0.5rem;
+  font-size: 4rem;
+  color: lightsalmon;
+  z-index: 50;
+  left: 1rem;
+  width: 80px;
+  height: 80px;
+  /* background-color: #f4a261; */
+}
+
+/* ====================  media query ========================= */
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  /* .offcanvas {
+    width: 400px;
+  } */
+
+  .offcanvas.open {
+    width: 100%;
+  }
+
+  .call-now {
+    display: none;
+  }
+  .logo {
+    width: 100px;
+  }
+
+  .slide-content img {
+    height: 100vh;
+  }
+
+  .slide-content h2 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    z-index: 2;
+    margin: 0;
+    font-size: 2rem;
+    width: 253px;
+    height: 140px;
+    /* max-width: 290px; */
+    color: white;
+    opacity: 0.8;
+  }
+
+  .slide-content button {
+    position: absolute; /* Position the h2 absolutely within the slide */
+    top: 70%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 10px;
+    z-index: 2;
+    font-weight: 600;
+    padding: 1rem 2rem;
+  }
+
+  .fa-square-whatsapp {
+    position: fixed;
+    bottom: 0.5rem;
+    font-size: 2rem;
+    color: green;
+    z-index: 50;
+    left: 1rem;
+    color: white;
+    width: 55px;
+    height: 55px;
+
+    /* background-color: #f4a261; */
+  }
+
+  .realSatebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .realSate h3 {
+    margin-top: 2rem;
+    font-size: 30px;
+  }
+
+  .realSate {
+    padding: 0.8rem;
+  }
+
+  .about h4 {
+    font-size: 22px;
+    color: #3f4448;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+  }
+
+  .numbers {
+    justify-content: space-between;
+    gap: 3rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem;
+  }
+
+  .num h4 {
+    font-size: 26px;
+  }
+
+  .imagesBuild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+    padding: 0 1.5rem;
+  }
+
+  .about_img img {
+    width: 330px;
+    height: 330;
+  }
+
+  .Our_Listings img {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    transition: scale 0.3s ease;
+    filter: brightness(0.8);
+  }
+
+  .Our_Listings .zoom_in {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .Our_Listings {
+    gap: 2rem 1rem;
+    margin: 0.5rem 0 4rem 0;
+  }
+
+  .Our_Listingss {
+    padding: 1rem 1rem;
+    margin: 2rem 0;
+  }
+
+  .content h2 {
+    font-size: 2rem; /* Adjust the font size as needed */
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  .content h2 span {
+    font-size: 2.8rem; /* Adjust the font size as needed */
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  .Our_Listingss h3 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #3f4448;
+    font-weight: 500;
+    line-height: 3rem;
+  }
+
+  .Our_Listingss h3 span {
+    /* text-align: center; */
+    font-size: 1rem;
+    /* text-transform: uppercase;
+    color: #3f4448;
+    font-weight: 500;
+    */
+    line-height: 0rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom .social-icons {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .realSate h3 {
+    font-size: 22px;
+  }
+
+  .realSate h4 {
+    font-size: 15px;
+  }
+
+  .realSate p {
+    font-size: 14px;
+  }
+}
