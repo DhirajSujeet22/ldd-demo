@@ -1,13 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
   const burger = document.querySelectorAll(".burger");
+  const cancelIcon = document.querySelector(".fa-xmark");
   const offcanvas = document.querySelector(".offcanvas");
   const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+  const dropdownMenu = document.querySelectorAll(".dropdown-menu");
+  console.log(dropdownMenu);
 
   console.log(burger);
   // Toggle offcanvas menu for mobile
   burger.forEach((item) => {
     item.addEventListener("click", function () {
       offcanvas.classList.toggle("open");
+    });
+  });
+
+  cancelIcon.addEventListener("click", function () {
+    dropdownMenu.forEach((item) => {
+      item.style.display = item.classList.contains("show") ? "none" : "none";
     });
   });
 

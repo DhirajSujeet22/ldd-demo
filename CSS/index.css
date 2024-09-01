@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -11,11 +12,11 @@
 
 .navbar {
   display: flex;
+  position: absolute;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 0px 18px;
   background-color: transparent;
-  position: absolute;
   z-index: 19;
   width: 100%;
   color: #fff;
@@ -32,6 +33,8 @@
   list-style: none;
   display: flex;
   gap: 20px;
+  font-weight: 600;
+  font-family: "Marcellus SC", serif;
 }
 
 .logo {
@@ -66,12 +69,12 @@
   transition: ease-out 0.5s;
   border: 2px solid goldenrod;
   border-radius: 10px;
-  box-shadow: inset 0 0 0 0 #725ac1;
+  box-shadow: inset 0 0 0 0 #68666f24;
 }
 
 .call-now:hover {
   color: white;
-  box-shadow: inset 0 -100px 0 0 #725ac1;
+  box-shadow: inset 0 -100px 0 0 #68666f24;
 }
 
 .call-now:active {
@@ -94,14 +97,6 @@
   box-shadow: inset 0 0 0 0 #725ac1;
 }
 
-/* .call-now-drop:hover {
-  background-color: #e76f51;
-}
-
-.call-now:hover {
-  background-color: #e76f51;
-} */
-
 .burger {
   display: none;
   cursor: pointer;
@@ -110,8 +105,8 @@
 }
 
 .burger span {
-  width: 25px;
-  height: 3px;
+  width: 22px;
+  height: 2px;
   background-color: white;
   transition: all 0.3s ease;
 }
@@ -234,11 +229,18 @@ ul {
 .swiper {
   width: 100%;
   height: 100%;
+  position: relative;
+  top: 0;
+}
+
+.slide-content img {
+  filter: brightness(0.6);
 }
 
 .slide-content h2 {
+  font-family: "Marcellus SC", serif;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -252,9 +254,9 @@ ul {
 }
 
 .slide-content button {
-  position: absolute; /* Position the h2 absolutely within the slide */
-  top: 80%; /* Center vertically */
-  left: 50%; /* Center horizontally */
+  position: absolute;
+  top: 65%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   background-color: transparent;
@@ -262,6 +264,13 @@ ul {
   font-size: 24px;
   z-index: 2;
   padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+}
+
+.slide-content button:hover {
+  background-color: rgba(222, 215, 215, 0.346);
 }
 
 .swiper-slide {
@@ -292,6 +301,7 @@ Delhi real estate destination css  =============== */
 .realSate {
   padding: 0 3rem;
 }
+
 .realSate h3 {
   text-align: center;
   font-size: 50px;
@@ -305,6 +315,7 @@ Delhi real estate destination css  =============== */
   align-items: center;
   gap: 5rem;
   margin-top: 8rem;
+  flex-wrap: wrap;
 }
 
 .about h4 {
@@ -370,23 +381,22 @@ Delhi real estate destination css  =============== */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
   margin: 7rem 0;
+  padding: 0 1rem;
 }
 
 .imagesBuild img {
-  width: 380px;
-  height: 300px;
+  width: 100%;
   overflow: hidden;
   transition: scale 0.3s ease;
   border-radius: 0.5rem;
   filter: brightness(0.7);
 }
 
-.zoom_in {
-  width: 380px;
-  height: 300px;
+.imagesBuild .zoom_in {
+  width: 25rem;
   overflow: hidden;
   position: relative;
   border-radius: 0.5rem;
@@ -422,14 +432,18 @@ Delhi real estate destination css  =============== */
   border-radius: 0.4rem;
   color: #000;
   cursor: pointer;
+  display: block;
+  margin: auto;
+  width: 8rem;
 }
 
-/* ======================================= */
+/* =============== Banner image css ======================== */
 
 .container {
   position: relative;
   width: 100%;
-  height: 400px; /* Adjust the height as needed */
+  height: 400px;
+  /* Adjust the height as needed */
   overflow: hidden;
 }
 
@@ -449,7 +463,8 @@ Delhi real estate destination css  =============== */
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.1); /* Semi-transparent black */
+  background: rgba(0, 0, 0, 0.1);
+  /* Semi-transparent black */
   color: white;
   display: flex;
   align-items: center;
@@ -463,13 +478,15 @@ Delhi real estate destination css  =============== */
 }
 
 .content h2 {
-  font-size: 4rem; /* Adjust the font size as needed */
+  font-size: 4rem;
+  /* Adjust the font size as needed */
   margin-bottom: 1rem;
   font-weight: 400;
 }
 
 .content h2 span {
-  font-size: 5rem; /* Adjust the font size as needed */
+  font-size: 5rem;
+  /* Adjust the font size as needed */
 }
 
 .SCHEDULE_BTN {
@@ -486,18 +503,18 @@ Delhi real estate destination css  =============== */
   border: 2px solid greenyellow;
 }
 
-/* ======================================= */
+/* ================= our images cards listings css   ====================== */
 
 .Our_Listingss {
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
 }
 
 .Our_Listings {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
   justify-content: center;
   align-items: center;
-  gap: 4rem 3rem;
+  gap: 4rem 4rem;
   margin: 0.5rem 0 7rem 0;
 }
 
@@ -516,16 +533,14 @@ Delhi real estate destination css  =============== */
 }
 
 .Our_Listings img {
-  width: 390px;
-  height: 250px;
+  width: 100%;
   overflow: hidden;
   transition: scale 0.3s ease;
   filter: brightness(0.8);
 }
 
 .Our_Listings .zoom_in {
-  width: 390px;
-  height: 250px;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -535,27 +550,43 @@ Delhi real estate destination css  =============== */
   filter: brightness(0.9);
 }
 
-/* ======================================= */
+/* ======================= footer css ==================== */
 
 .footer {
   background-color: #333;
   color: #fff;
   padding: 40px 40px;
+  position: relative;
+}
+
+.footer-column img {
+  width: 150px;
+  height: 150px;
+  margin-top: -2.5rem;
+}
+
+.footer-column p {
+  margin-top: -1.2rem;
+}
+
+.footer-column p {
+  margin-top: -1.2rem;
+  color: #bbb;
+}
+
+.footer-column p:hover {
+  color: #fff;
 }
 
 .footer-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  /* grid-template-columns: repeat(3, 1fr); */
   justify-content: center;
-  align-items: center;
   gap: 4rem 2rem;
   margin: 0.5rem 0 7rem 0;
 }
 
 .footer-column {
-  /* flex: 1; */
-
   min-width: 150px;
   margin-bottom: 20px;
 }
@@ -592,17 +623,21 @@ Delhi real estate destination css  =============== */
 }
 
 .footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
   border-top: 1px solid #444;
-  flex-wrap: wrap;
 }
 
 .footer-bottom p {
   margin: 0;
-  font-size: 14px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  transition: color 0.3s ease;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+.footer-bottom p:hover {
+  color: #bbb;
 }
 
 .footer-bottom .social-icons {
@@ -625,9 +660,7 @@ Delhi real estate destination css  =============== */
   color: #fff;
 }
 
-/* Responsive Styles */
-
-/* ======================================= */
+/* =============== whatsApp icon css ======================== */
 
 .fa-square-whatsapp {
   position: fixed;
@@ -638,10 +671,45 @@ Delhi real estate destination css  =============== */
   left: 1rem;
   width: 80px;
   height: 80px;
-  /* background-color: #f4a261; */
 }
 
 /* ====================  media query ========================= */
+
+@media (max-width: 1024px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .offcanvas.open {
+    width: 100%;
+  }
+
+  .call-now {
+    display: none;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .slide-content h2 {
+    font-size: 4rem;
+    width: 450px;
+    top: 50%;
+    left: 50%;
+  }
+
+  .slide-content button {
+    top: 85%;
+    left: 50%;
+  }
+}
+
+/* ---------------------------------------- */
 
 @media (max-width: 768px) {
   .navbar-links {
@@ -652,10 +720,6 @@ Delhi real estate destination css  =============== */
     display: flex;
   }
 
-  /* .offcanvas {
-    width: 400px;
-  } */
-
   .offcanvas.open {
     width: 100%;
   }
@@ -663,6 +727,7 @@ Delhi real estate destination css  =============== */
   .call-now {
     display: none;
   }
+
   .logo {
     width: 100px;
   }
@@ -672,55 +737,23 @@ Delhi real estate destination css  =============== */
   }
 
   .slide-content h2 {
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    text-align: center;
-    z-index: 2;
-    margin: 0;
-    font-size: 2rem;
-    width: 253px;
-    height: 140px;
-    /* max-width: 290px; */
-    color: white;
-    opacity: 0.8;
+    font-size: 4rem;
+    width: 550px;
   }
 
   .slide-content button {
-    position: absolute; /* Position the h2 absolutely within the slide */
-    top: 70%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: transparent;
-    border: 2px solid white;
-    font-size: 10px;
-    z-index: 2;
-    font-weight: 600;
-    padding: 1rem 2rem;
+    top: 80%;
+    left: 50%;
+    font-size: 20px;
   }
 
   .fa-square-whatsapp {
-    position: fixed;
-    bottom: 0.5rem;
-    font-size: 2rem;
-    color: green;
-    z-index: 50;
-    left: 1rem;
-    color: white;
     width: 55px;
     height: 55px;
-
-    /* background-color: #f4a261; */
   }
 
-  .realSatebox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
+  .offcanvas ul li {
+    margin-bottom: 35px;
   }
 
   .realSate h3 {
@@ -751,32 +784,45 @@ Delhi real estate destination css  =============== */
     font-size: 26px;
   }
 
+  .imagesBuild img {
+    width: 100%;
+    overflow: hidden;
+    transition: scale 0.3s ease;
+    border-radius: 0.5rem;
+    filter: brightness(0.7);
+  }
+
+  .imagesBuild .zoom_in {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.5rem;
+  }
+
+  .imagesBuild .centered-text {
+    font-size: 2.5rem;
+  }
+
   .imagesBuild {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
-    flex-wrap: wrap;
     margin: 5rem 0;
     padding: 0 1.5rem;
   }
 
   .about_img img {
-    width: 330px;
-    height: 330;
+    max-width: 100%;
+    height: auto;
   }
 
   .Our_Listings img {
-    width: 350px;
-    height: 250px;
+    width: 100%;
     overflow: hidden;
     transition: scale 0.3s ease;
     filter: brightness(0.8);
   }
 
   .Our_Listings .zoom_in {
-    width: 350px;
-    height: 250px;
+    max-width: 100%;
     overflow: hidden;
     position: relative;
   }
@@ -792,12 +838,13 @@ Delhi real estate destination css  =============== */
   }
 
   .content h2 {
-    font-size: 2rem; /* Adjust the font size as needed */
+    font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: 400;
   }
+
   .content h2 span {
-    font-size: 2.8rem; /* Adjust the font size as needed */
+    font-size: 2.8rem;
     margin-bottom: 1rem;
     font-weight: 400;
   }
@@ -812,13 +859,21 @@ Delhi real estate destination css  =============== */
   }
 
   .Our_Listingss h3 span {
-    /* text-align: center; */
     font-size: 1rem;
-    /* text-transform: uppercase;
-    color: #3f4448;
-    font-weight: 500;
-    */
     line-height: 0rem;
+  }
+
+  /* ------------------------------ */
+
+  .footer-column img {
+    width: 100px;
+    height: 100px;
+    margin-top: -2.5rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+    font-weight: 500;
   }
 
   .footer-container {
@@ -835,7 +890,28 @@ Delhi real estate destination css  =============== */
   }
 }
 
+/* --------------------------------------- */
+
 @media (max-width: 576px) {
+  .imagesBuild .centered-text {
+    font-size: 1rem;
+  }
+
+  .slide-content button {
+    top: 70%;
+    left: 50%;
+    font-size: 0.7rem;
+    padding: 1rem 0.6rem;
+    font-weight: 600;
+  }
+
+  .slide-content h2 {
+    top: 40%;
+    font-size: 3rem;
+    width: 450px;
+    height: 140px;
+  }
+
   .realSate h3 {
     font-size: 22px;
   }
@@ -846,5 +922,33 @@ Delhi real estate destination css  =============== */
 
   .realSate p {
     font-size: 14px;
+  }
+}
+
+/* --------------------------------------- */
+
+@media (max-width: 400px) {
+  .content h2 {
+    font-size: 1.8rem;
+  }
+
+  .content h2 span {
+    font-size: 2.4rem;
+  }
+
+  .centered-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .slide-content button {
+    font-size: 1.1rem;
+  }
+
+  .slide-content h2 {
+    font-size: 2.5rem;
+    width: 400px;
+    /* height: 140px; */
   }
 }
