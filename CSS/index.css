@@ -318,6 +318,10 @@ Delhi real estate destination css  =============== */
   flex-wrap: wrap;
 }
 
+.about {
+  max-width: 30rem;
+}
+
 .about h4 {
   font-size: 30px;
   color: #3f4448;
@@ -706,6 +710,18 @@ Delhi real estate destination css  =============== */
   .slide-content button {
     top: 85%;
     left: 50%;
+  }
+
+  .about {
+    max-width: 100%;
+  }
+
+  .imagesBuild img {
+    width: 100%;
+  }
+
+  .imagesBuild .zoom_in {
+    width: 100%;
   }
 }
 

@@ -4,9 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const offcanvas = document.querySelector(".offcanvas");
   const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
   const dropdownMenu = document.querySelectorAll(".dropdown-menu");
-  console.log(dropdownMenu);
 
-  console.log(burger);
+  // -------------------------------------------------------
+
+  // ================= Navbar Hamburger Functionality =========================>
+
   // Toggle offcanvas menu for mobile
   burger.forEach((item) => {
     item.addEventListener("click", function () {
@@ -19,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
       item.style.display = item.classList.contains("show") ? "none" : "none";
     });
   });
+
+  // -------------------------------------------------------
 
   // Toggle dropdown menus on click for both desktop and mobile
   dropdownToggles.forEach((item) => {
@@ -33,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// =================================
+// ================= Images Swiping Animation =========================>
 
 const swiper = new Swiper(".mySwiper", {
   crossFade: true,
@@ -54,3 +58,52 @@ const swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// ================= Number Running Animation =========================>
+
+const AnimationOfNumbers = () => {
+  const countNumber = document.querySelectorAll(".counter_number");
+  const speed = 200;
+
+  countNumber.forEach((curElem) => {
+    const updateNumber = () => {
+      const initialNumber = parseInt(curElem.textContent);
+      const targetNumber = parseInt(curElem.dataset.number);
+
+      // Calculate the increment number
+      const incrementNumber = Math.trunc(targetNumber / speed);
+
+      if (initialNumber < targetNumber) {
+        // Update the text content with the incremented number
+        curElem.innerText = `${initialNumber + incrementNumber} +`;
+      } else {
+        // If the initial number is greater or equal to the target, clear the interval
+        clearInterval(interval);
+      }
+    };
+
+    // Set an interval and store its ID to clear it later
+    const interval = setInterval(updateNumber, 10);
+  });
+};
+
+// ================= Smooth Scrolling Animation =========================>
+
+const workSection = document.querySelector(".numbers");
+console.log(workSection);
+
+const workObserver = new IntersectionObserver(
+  (entries, observer) => {
+    const [entry] = entries;
+
+    if (entry.isIntersecting) {
+      return AnimationOfNumbers();
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+
+workObserver.observe(workSection);
