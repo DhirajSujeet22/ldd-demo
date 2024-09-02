@@ -20,11 +20,13 @@
   position: relative;
   color: white;
   text-align: center;
+  filter: brightness(0.8);
 }
 
 .banner h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
+  color: white;
 }
 
 .contact-info {
@@ -38,7 +40,7 @@
 .contact-info .info-box {
   flex: 1 1 300px;
   margin: 10px;
-  padding: 20px;
+  padding: 2.8rem 1.1rem;
   background-color: white;
   border-radius: 8px;
   text-align: center;
@@ -51,10 +53,11 @@
   color: #333;
 }
 
-.contact-info .info-box p {
-  margin: 0;
+.contact-info .info-box a {
   font-size: 1rem;
-  color: #666;
+  font-weight: 600;
+  color: blueviolet;
+  text-decoration: none;
 }
 
 .contact-form {
