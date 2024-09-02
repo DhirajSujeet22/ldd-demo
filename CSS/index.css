@@ -10,6 +10,16 @@
 
 /* ==================== Navbar css  ============================= */
 
+.sticky .navbar {
+  position: fixed;
+  top: 0;
+  background-color: #3f4448;
+  color: #ffff;
+  left: 0;
+  z-index: 8;
+  transition: all 0.5s ease;
+}
+
 .navbar {
   display: flex;
   position: absolute;
@@ -307,6 +317,7 @@ Delhi real estate destination css  =============== */
   font-size: 50px;
   color: #3f4448;
   margin-top: 2rem;
+  font-family: "Marcellus SC", serif;
 }
 
 .realSatebox {
@@ -326,6 +337,7 @@ Delhi real estate destination css  =============== */
   font-size: 30px;
   color: #3f4448;
   text-transform: uppercase;
+  font-family: "Marcellus SC", serif;
 }
 
 .about p {
@@ -333,6 +345,7 @@ Delhi real estate destination css  =============== */
   font-size: 1rem;
   font-weight: 500;
   margin: 1.5rem 0;
+  text-wrap: balance;
   text-align: start;
   line-height: 1.6rem;
 }
@@ -373,11 +386,17 @@ Delhi real estate destination css  =============== */
 
 .num h4 {
   font-size: 36px;
+  color: #3f4448;
+  font-family: "Marcellus SC", serif;
 }
 
 .num p {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1rem;
+  color: #9ea0a6;
+  margin-top: 1rem;
+  max-width: 15rem;
+  text-transform: capitalize;
 }
 
 /* ============== Real state cards section css =============== */
@@ -487,10 +506,12 @@ Delhi real estate destination css  =============== */
   /* Adjust the font size as needed */
   margin-bottom: 1rem;
   font-weight: 400;
+  font-family: "Marcellus SC", serif;
 }
 
 .content h2 span {
   font-size: 5rem;
+  font-family: "Marcellus SC", serif;
   /* Adjust the font size as needed */
 }
 
@@ -531,6 +552,7 @@ Delhi real estate destination css  =============== */
   font-weight: 700;
   line-height: 3rem;
   margin: 2rem 0rem;
+  font-family: "Marcellus SC", serif;
 }
 
 .Our_Listingss h3 span {

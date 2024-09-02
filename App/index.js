@@ -87,6 +87,26 @@ const AnimationOfNumbers = () => {
   });
 };
 
+// ================= Creating Sticky Navbar =========================>
+
+const hading = document.querySelector(".observation");
+
+const observer = new IntersectionObserver(
+  (entries, observe) => {
+    const [entry] = entries;
+    console.log(entry)
+    entry.isIntersecting
+      ? document.body.classList.add("sticky")
+      : document.body.classList.remove("sticky");
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+
+observer.observe(hading);
+
 // ================= Smooth Scrolling Animation =========================>
 
 const workSection = document.querySelector(".numbers");
