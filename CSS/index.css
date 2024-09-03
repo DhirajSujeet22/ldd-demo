@@ -18,6 +18,7 @@
   left: 0;
   z-index: 8;
   transition: all 0.5s ease;
+  padding: 1rem 1rem;
 }
 
 .navbar {
@@ -25,7 +26,7 @@
   position: absolute;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 18px;
+  padding: 1.5rem;
   background-color: transparent;
   z-index: 19;
   width: 100%;
@@ -48,7 +49,7 @@
 }
 
 .logo {
-  width: 160px;
+  width: 200px;
 }
 
 .navbar-links li {
@@ -587,17 +588,11 @@ Delhi real estate destination css  =============== */
 }
 
 .footer-column img {
-  width: 150px;
-  height: 150px;
-  margin-top: -2.5rem;
+  width: 160px;
 }
 
 .footer-column p {
-  margin-top: -1.2rem;
-}
-
-.footer-column p {
-  margin-top: -1.2rem;
+  margin-top: 1.8rem;
   color: #bbb;
 }
 
@@ -709,6 +704,8 @@ Delhi real estate destination css  =============== */
 
   .burger {
     display: flex;
+    position: absolute;
+    right: 1rem;
   }
 
   .offcanvas.open {
@@ -717,10 +714,6 @@ Delhi real estate destination css  =============== */
 
   .call-now {
     display: none;
-  }
-
-  .logo {
-    width: 100px;
   }
 
   .slide-content h2 {
@@ -755,10 +748,6 @@ Delhi real estate destination css  =============== */
     display: none;
   }
 
-  .burger {
-    display: flex;
-  }
-
   .offcanvas.open {
     width: 100%;
   }
@@ -768,7 +757,7 @@ Delhi real estate destination css  =============== */
   }
 
   .logo {
-    width: 100px;
+    width: 160px;
   }
 
   .slide-content img {
@@ -903,17 +892,6 @@ Delhi real estate destination css  =============== */
   }
 
   /* ------------------------------ */
-
-  .footer-column img {
-    width: 100px;
-    height: 100px;
-    margin-top: -2.5rem;
-  }
-
-  .footer-bottom p {
-    font-size: 0.8rem;
-    font-weight: 500;
-  }
 
   .footer-container {
     flex-direction: column;

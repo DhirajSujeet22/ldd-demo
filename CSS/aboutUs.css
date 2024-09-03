@@ -52,6 +52,11 @@
   font-weight: 600;
 }
 
+.banner-text h1,
+p {
+  font-family: "Marcellus SC", serif;
+}
+
 .banner::before {
   content: "";
   position: absolute;
@@ -82,6 +87,7 @@
   font-size: 30px;
   color: #3f4448;
   text-transform: uppercase;
+  font-family: "Marcellus SC", serif;
 }
 
 .text-content p {
@@ -90,6 +96,7 @@
   font-weight: 500;
   margin: 1.5rem 0;
   line-height: 1.3rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .image-content {
@@ -146,5 +153,11 @@
 
   .numbered-list-section {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-content {
+    text-align: start;
   }
 }
