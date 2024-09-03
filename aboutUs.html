@@ -1,305 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/aboutUs.css" />
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="shortcut icon" href="img/Screenshot_2024-08-27_170534-removebg-preview.png" type="image/x-icon">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/aboutUs.css" />
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="shortcut icon" href="img/Screenshot_2024-08-27_170534-removebg-preview.png" type="image/x-icon">
   <link rel="stylesheet" href="CSS/index.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Font Awesome CDN link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-xyz12345..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-  </head>
-  <body>
 
-    <!-- navbar section  -->
+</head>
 
-    <nav class="navbar">
-      <div class="navbar-logo">
-        <a href="index.html">
-          <img class="logo" src="IMG/lld-removebg-preview.png" alt="image_logo" />
-        </a>
-      </div>
-      <ul class="navbar-links">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">ABOUT US <span class="arrow"> <i
-                class="fa-solid fa-angle-down"></i></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Moti Ahuja </a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">SERVICES<span class="arrow"> <i
-                class="fa-solid fa-angle-down"></i></span></a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="#">REAL ESTATE CONSULTANTS IN GURGAON </a>
-            </li>
-            <li><a href="#">Residential Real Estate Consultant</a></li>
-            <li><a href="#">Commercial Real Estate Consultant</a></li>
-            <li><a href="#"> Retail Real Estate Services</a></li>
-            <li><a href="#"> Real Estate Portfolio Management</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">PROPERTIES <span class="arrow"> <i
-                class="fa-solid fa-angle-down"></i></span></a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="#">Our Listings</a>
-            </li>
-            <li><a href="#">Residential Properties</a></li>
-            <li><a href="#">Commercial Properties</a></li>
-            <li><a href="#">Retail Properties</a></li>
-            <li><a href="#">All Properties</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">RESOURCES <span class="arrow"> <i
-                class="fa-solid fa-angle-down"></i></span></a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="#">Blog</a>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="contactUs.html">CONTACT US <span class="arrow"></a>
-        </li>
-      </ul>
-      <div class="navbar-right">
-        <button class="call-now">Call Now</button>
-      </div>
-      <div class="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-  
-      <img class="fa-square-whatsapp" src="IMG/download-removebg-preview.png" alt="" />
-    </nav>
-  
-    <!-- Offcanvas Menu -->
-    <div class="offcanvas">
-      <i class="burger fa-solid fa-xmark"></i>
-      <ul>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">ABOUT US <span class="arrow"> <i
-                class="fa-solid fa-angle-down"></i></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="aboutUs.html">Moti Ahuja </a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">SERVICES<span class="arrow"> <i
-                class="fa-solid fa-angle-down"></i></span></a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="#">REAL ESTATE CONSULTANTS IN GURGAON </a>
-            </li>
-            <li><a href="#">Residential Real Estate Consultant</a></li>
-            <li><a href="#">Commercial Real Estate Consultant</a></li>
-            <li><a href="#"> Retail Real Estate Services</a></li>
-            <li><a href="#"> Real Estate Portfolio Management</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">PROPERTIES <span class="arrow"><i
-                class="fa-solid fa-angle-down"></i></span></a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="#">Our Listings</a>
-            </li>
-            <li><a href="#">Residential Properties</a></li>
-            <li><a href="#">Commercial Properties</a></li>
-            <li><a href="#">Retail Properties</a></li>
-            <li><a href="#">All Properties</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">RESOURCES <span class="arrow"><i
-                class="fa-solid fa-angle-down"></i></span></a>
-          <ul class="dropdown-menu">
-            <li>
-              <a href="#">Blog</a>
-            </li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle">CONTACT US <span class="arrow"></a>
-        </li>
-        <li><button class="call-now-drop">Call Now</button></li>
-      </ul>
+<body>
+
+  <!-- navbar section  -->
+
+  <nav class="navbar aboutUs">
+    <div class="navbar-logo">
+      <a href="index.html">
+        <img class="logo" src="img/logo.png" alt="image_logo" />
+      </a>
+    </div>
+    <ul class="navbar-links">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">ABOUT US <span class="arrow"> <i
+              class="fa-solid fa-angle-down"></i></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Moti Ahuja </a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">SERVICES<span class="arrow"> <i
+              class="fa-solid fa-angle-down"></i></span></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="servicesPage1.html">REAL ESTATE CONSULTANTS IN GURGAON </a>
+          </li>
+          <li><a href="servicesPage2.html">Residential Real Estate Consultant</a></li>
+          <li><a href="servicesPage3.html">Commercial Real Estate Consultant</a></li>
+          <li><a href="servicesPage4.html"> Retail Real Estate Services</a></li>
+
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">PROPERTIES <span class="arrow"> <i
+              class="fa-solid fa-angle-down"></i></span></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#">Our Listings</a>
+          </li>
+          <li><a href="#">Residential Properties</a></li>
+          <li><a href="#">Commercial Properties</a></li>
+          <li><a href="#">Retail Properties</a></li>
+          <li><a href="#">All Properties</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">RESOURCES <span class="arrow"> <i
+              class="fa-solid fa-angle-down"></i></span></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="contactUs" href="contactUs.html">CONTACT US <span class="arrow"></a>
+      </li>
+    </ul>
+    <div class="navbar-right">
+      <button class="call-now">Call Now</button>
+    </div>
+    <div class="burger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
-    <!-- Banner Section -->
-    <section class="banner">
-      <div class="banner-text">
-        <h1>About Us</h1>
-        <p>Your trusted partner in innovation.</p>
-      </div>
-    </section>
+    <a href="https://wa.me/9818737542" class="whatsapp-link" target="_blank">
+      <img class="fa-square-whatsapp" src="IMG/download-removebg-preview.png" alt="WhatsApp Logo" />
+    </a>
+  </nav>
 
-    <!-- First Content Section -->
-    <section class="content-section">
-      <div class="text-content">
-        <h4>Our Mission</h4>
-        <p>
-          With an automobile background of initial 6 years , the “Service-Sale
-          of commercial, utility and passenger vehicles to luxury sedans” taught
-          me some of the most important and valuable lessons of life and imbibed
-          the talent and art of attending diversified client’s, serving them and
-          retaining them with the very best of Pre-Sales, During- Sales &
-          After-Sales services.
-        </p>
-        <p>
-          In 1988, the automobile industry started facing headwinds, brought
-          turbulence in career and opportunity in real estate came. Around the
-          same time India was catching up global attention, MNC’s moving in and
-          the corporate world opening up. This brought opportunities for better
-          representations in the real estate industry, which too was wanting
-          better-equipped sales and service people. This proved to be a boon in
-          waiting and thus began my journey began in Real Estate.
-        </p>
-        <p>
-          Thereafter, having worked, served & retained (till day) successfully,
-          the heads of most reputed Indian corporates, Global companies,
-          International Banks, NRI’s, Industrialists & decorated Defence
-          services personnel, l successfully grew and covered this journey, with
-          immense pleasure, pride and privilege, of its learnings, rewards and
-          being enriched.
-        </p>
-        <p>
-          NAREDCO-HSMI invited me as guest faculty to conduct courses for
-          beginners under its certification programs.
-        </p>
-      </div>
-      <div class="image-content">
-        <img
-          src="https://plus.unsplash.com/premium_photo-1680185462024-449a2abaec28?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Our Mission Image"
-        />
-      </div>
-    </section>
+  <!-- Offcanvas Menu -->
+  <div class="offcanvas">
+    <i class="burger fa-solid fa-xmark"></i>
+    <ul>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">ABOUT US <span class="arrow"> <i
+              class="fa-solid fa-angle-down"></i></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="aboutUs.html">LDD Real Estate</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">SERVICES<span class="arrow"> <i
+              class="fa-solid fa-angle-down"></i></span></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="servicesPage1.html">REAL ESTATE CONSULTANTS IN GURGAON </a>
+          </li>
+          <li><a href="servicesPage2.html">Residential Real Estate Consultant</a></li>
+          <li><a href="servicesPage3.html">Commercial Real Estate Consultant</a></li>
+          <li><a href="servicesPage4.html"> Retail Real Estate Services</a></li>
 
-    <!-- Numbered List Section -->
-    <section class="numbered-list-section">
-      <div class="list-item">
-        <span>30 +</span>
-        <p>years</p>
-      </div>
-      <div class="list-item">
-        <span>1,750,000 + </span>
-        <p>Sq. Feet Sold & Leased</p>
-      </div>
-      <div class="list-item">
-        <span>850 + </span>
-        <p>Clients Serviced</p>
-      </div>
-      <div class="list-item">
-        <span>4</span>
-        <p>Sustainability</p>
-      </div>
-    </section>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">PROPERTIES <span class="arrow"><i
+              class="fa-solid fa-angle-down"></i></span></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#">Our Listings</a>
+          </li>
+          <li><a href="#">Residential Properties</a></li>
+          <li><a href="#">Commercial Properties</a></li>
+          <li><a href="#">Retail Properties</a></li>
+          <li><a href="#">All Properties</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">RESOURCES <span class="arrow"><i
+              class="fa-solid fa-angle-down"></i></span></a>
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="contactUs.html" class="dropdown-toggle">CONTACT US <span class="arrow"></a>
+      </li>
+      <li><button class="call-now-drop">Call Now</button></li>
+    </ul>
+  </div>
 
-    <!-- Second Content Section -->
-    <section class="content-section">
-      <div class="image-content">
-        <img
-          src="https://images.unsplash.com/photo-1710582307458-f1328c2a7839?&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY4fHxyZWFsJTIwZXN0YXRlfGVufDB8fDB8fHww"
-          alt="Our Values Image"
-        />
-      </div>
-      <div class="text-content">
-        <h4>Our Values</h4>
-        <p>
-          COMMITMENT: We protect & serve our client’s interest as our purpose
-          and priority.
-        </p>
-        <p>
-          OWNERSHIP: We are accountable to maintain the highest level of
-          services and responsible to raise the bar, every day and every time
-        </p>
-        <p>
-          DRIVE: We are driven to be the finest in all that we do, as a team
-          with our clients, keeping them well informed, educated and updated
-          while we work on to achieve their objectives without settling for
-          anything less than the best.
-        </p>
-        <p>
-          INTEGRITY: We will be honest in our intents and actions and do the
-          right for client’s and community.
-        </p>
-        <p>
-          HUMILITY: We will keep our client’s trust in us, protected and
-          preserved, at all times
-        </p>
-        <p>
-          CHARITY: We believe in the principle of “You make a living by what you
-          get, but you make a life by what you give” and are responsible to that
-          cause.
-        </p>
-      </div>
-    </section>
+  <!-- Banner Section -->
+  <section class="banner">
+    <div class="banner-text">
+      <h1>About Us</h1>
+      <p>Your trusted partner in innovation.</p>
+    </div>
+  </section>
+
+  <!-- First Content Section -->
+  <section class="content-section">
+    <div class="text-content">
+      <h4>Our Mission</h4>
+      <p>
+        With an automobile background of initial 6 years , the “Service-Sale
+        of commercial, utility and passenger vehicles to luxury sedans” taught
+        me some of the most important and valuable lessons of life and imbibed
+        the talent and art of attending diversified client’s, serving them and
+        retaining them with the very best of Pre-Sales, During- Sales &
+        After-Sales services.
+      </p>
+      <p>
+        In 1988, the automobile industry started facing headwinds, brought
+        turbulence in career and opportunity in real estate came. Around the
+        same time India was catching up global attention, MNC’s moving in and
+        the corporate world opening up. This brought opportunities for better
+        representations in the real estate industry, which too was wanting
+        better-equipped sales and service people. This proved to be a boon in
+        waiting and thus began my journey began in Real Estate.
+      </p>
+      <p>
+        Thereafter, having worked, served & retained (till day) successfully,
+        the heads of most reputed Indian corporates, Global companies,
+        International Banks, NRI’s, Industrialists & decorated Defence
+        services personnel, l successfully grew and covered this journey, with
+        immense pleasure, pride and privilege, of its learnings, rewards and
+        being enriched.
+      </p>
+      <p>
+        NAREDCO-HSMI invited me as guest faculty to conduct courses for
+        beginners under its certification programs.
+      </p>
+    </div>
+    <div class="image-content">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1680185462024-449a2abaec28?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Our Mission Image" />
+    </div>
+  </section>
+
+  <!-- Numbered List Section -->
+  <section class="numbered-list-section">
+    <div class="list-item">
+      <span>30 +</span>
+      <p>years</p>
+    </div>
+    <div class="list-item">
+      <span>1,750,000 + </span>
+      <p>Sq. Feet Sold & Leased</p>
+    </div>
+    <div class="list-item">
+      <span>850 + </span>
+      <p>Clients Serviced</p>
+    </div>
+    <div class="list-item">
+      <span>4</span>
+      <p>Sustainability</p>
+    </div>
+  </section>
+
+  <!-- Second Content Section -->
+  <section class="content-section">
+    <div class="image-content">
+      <img
+        src="https://images.unsplash.com/photo-1710582307458-f1328c2a7839?&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY4fHxyZWFsJTIwZXN0YXRlfGVufDB8fDB8fHww"
+        alt="Our Values Image" />
+    </div>
+    <div class="text-content">
+      <h4>Our Values</h4>
+      <p>
+        COMMITMENT: We protect & serve our client’s interest as our purpose
+        and priority.
+      </p>
+      <p>
+        OWNERSHIP: We are accountable to maintain the highest level of
+        services and responsible to raise the bar, every day and every time
+      </p>
+      <p>
+        DRIVE: We are driven to be the finest in all that we do, as a team
+        with our clients, keeping them well informed, educated and updated
+        while we work on to achieve their objectives without settling for
+        anything less than the best.
+      </p>
+      <p>
+        INTEGRITY: We will be honest in our intents and actions and do the
+        right for client’s and community.
+      </p>
+      <p>
+        HUMILITY: We will keep our client’s trust in us, protected and
+        preserved, at all times
+      </p>
+      <p>
+        CHARITY: We believe in the principle of “You make a living by what you
+        get, but you make a life by what you give” and are responsible to that
+        cause.
+      </p>
+    </div>
+  </section>
 
 
-      <!-- Footer Section -->
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-column">
-            <a href="index.html">
-              <img src="IMG/lld-removebg-preview.png" alt="logo">
-            </a>
-            <p>At LDD Real Estate, we specialize in finding the perfect home for you and your family.</p>
-  
-          </div>
-          <div class="footer-column">
-            <h4>PROPERTIES</h4>
-            <ul>
-              <li><a href="#">Our Listings</a></li>
-              <li><a href="#">Residential Properties</a></li>
-              <li><a href="#">Retail Properties</a></li>
-              <li><a href="#">Commercial Properties</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>residential real estate</h4>
-            <ul>
-              <li><a href="#">Plots in Gurgaon</a></li>
-              <li><a href="#">Bungalows in Gurgaon</a></li>
-              <li><a href="#">Builder Floors in Gurgaon</a></li>
-              <li><a href="#">Apartments in Gurgaon</a></li>
-              <li><a href="#">All Residential Properties in Gurgaon</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h4>Residential
-              Localities</h4>
-            <ul>
-              <li><a href="#">DLF City Phase 1-5</a></li>
-              <li><a href="#">M.G.Road</a></li>
-              <li><a href="#">Golf Course Road</a></li>
-              <li><a href="#">Golf Course Extn Road</a></li>
-              <li><a href="#">Sohna Road</a></li>
-              <li><a href="#">Sushant Lok 1 & 2</a></li>
-              <li><a href="#">South City 1 & 2</a></li>
-            </ul>
-          </div>
-        </div>
-  
-        <div class="footer-bottom">
-          <p>
-            &copy; All rights reserved by <strong>LDD</strong> Design and Develop by Big Design Software
-            Technology.
-          </p>
-  
-        </div>
-      </footer>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <a href="index.html">
+          <img src="IMG/lld-removebg-preview.png" alt="logo">
+        </a>
+        <p>At LDD Real Estate, we specialize in finding the perfect home for you and your family.</p>
+
+      </div>
+      <div class="footer-column">
+        <h4>PROPERTIES</h4>
+        <ul>
+          <li><a href="#">Our Listings</a></li>
+          <li><a href="#">Residential Properties</a></li>
+          <li><a href="#">Retail Properties</a></li>
+          <li><a href="#">Commercial Properties</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>residential real estate</h4>
+        <ul>
+          <li><a href="#">Plots in Gurgaon</a></li>
+          <li><a href="#">Bungalows in Gurgaon</a></li>
+          <li><a href="#">Builder Floors in Gurgaon</a></li>
+          <li><a href="#">Apartments in Gurgaon</a></li>
+          <li><a href="#">All Residential Properties in Gurgaon</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Residential
+          Localities</h4>
+        <ul>
+          <li><a href="#">DLF City Phase 1-5</a></li>
+          <li><a href="#">M.G.Road</a></li>
+          <li><a href="#">Golf Course Road</a></li>
+          <li><a href="#">Golf Course Extn Road</a></li>
+          <li><a href="#">Sohna Road</a></li>
+          <li><a href="#">Sushant Lok 1 & 2</a></li>
+          <li><a href="#">South City 1 & 2</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; All rights reserved by <strong>LDD</strong> Design and Develop by Big Design Software
+        Technology.
+      </p>
+
+    </div>
+  </footer>
   <!-- Footer Section -->
 
-    <script src="App/index.js"></script>
-  </body>
+  <script src="App/index.js"></script>
+</body>
+
 </html>

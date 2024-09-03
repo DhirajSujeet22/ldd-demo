@@ -90,14 +90,18 @@ const AnimationOfNumbers = () => {
 // ================= Creating Sticky Navbar =========================>
 
 const hading = document.querySelector(".observation");
-
+const logo = document.querySelector(".logo");
 const observer = new IntersectionObserver(
   (entries, observe) => {
     const [entry] = entries;
-    console.log(entry)
-    entry.isIntersecting
-      ? document.body.classList.add("sticky")
-      : document.body.classList.remove("sticky");
+    console.log(entry);
+    if (entry.isIntersecting) {
+      document.body.classList.add("sticky");
+      console.log((logo.src = "img/logo2.png"));
+    } else {
+      document.body.classList.remove("sticky");
+      console.log((logo.src = "img/logo.png"));
+    }
   },
   {
     root: null,
