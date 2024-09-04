@@ -100,7 +100,7 @@ const observer = new IntersectionObserver(
       console.log((logo.src = "img/logo2.png"));
     } else {
       document.body.classList.remove("sticky");
-      console.log((logo.src = "img/logo.png"));
+      console.log((logo.src = "img/logo2.png"));
     }
   },
   {

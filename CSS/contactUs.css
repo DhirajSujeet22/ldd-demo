@@ -96,8 +96,43 @@
 }
 
 .contact-form form {
-  max-width: 600px;
+  max-width: 90%;
   margin: auto;
+}
+
+.select-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  appearance: none; /* Removes default styling in most browsers */
+  -webkit-appearance: none; /* Removes default styling in WebKit browsers */
+  -moz-appearance: none; /* Removes default styling in Mozilla browsers */
+  cursor: pointer;
+}
+
+.select-wrapper::after {
+  content: "\25BE"; /* Unicode character for downward arrow */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensures the arrow does not interfere with click events */
+  color: #333;
+  font-size: 16px;
 }
 
 .contact-form input,
