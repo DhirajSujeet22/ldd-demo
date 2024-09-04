@@ -541,7 +541,7 @@ Delhi real estate destination css  =============== */
   grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
   justify-content: center;
   align-items: center;
-  gap: 4rem 4rem;
+  gap: 2rem 2rem;
   margin: 0.5rem 0 7rem 0;
 }
 
@@ -565,12 +565,14 @@ Delhi real estate destination css  =============== */
   overflow: hidden;
   transition: scale 0.3s ease;
   filter: brightness(0.8);
+  border-radius: 0.5rem;
 }
 
 .Our_Listings .zoom_in {
   width: 100%;
   overflow: hidden;
   position: relative;
+  border-radius: 0.5rem;
 }
 
 .Our_Listings img:hover {
