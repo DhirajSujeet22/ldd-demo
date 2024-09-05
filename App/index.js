@@ -72,6 +72,7 @@ const AnimationOfNumbers = () => {
 
       // Calculate the increment number
       const incrementNumber = Math.trunc(targetNumber / speed);
+      console.log(incrementNumber);
 
       if (initialNumber < targetNumber) {
         // Update the text content with the incremented number
@@ -94,13 +95,12 @@ const logo = document.querySelector(".logo");
 const observer = new IntersectionObserver(
   (entries, observe) => {
     const [entry] = entries;
-    console.log(entry);
     if (entry.isIntersecting) {
       document.body.classList.add("sticky");
-      console.log((logo.src = "img/logo2.png"));
+      logo.src = "img/logo2.png";
     } else {
       document.body.classList.remove("sticky");
-      console.log((logo.src = "img/logo2.png"));
+      logo.src = "img/logo2.png";
     }
   },
   {
@@ -114,7 +114,6 @@ observer.observe(hading);
 // ================= Smooth Scrolling Animation =========================>
 
 const workSection = document.querySelector(".numbers");
-console.log(workSection);
 
 const workObserver = new IntersectionObserver(
   (entries, observer) => {
@@ -131,9 +130,3 @@ const workObserver = new IntersectionObserver(
 );
 
 workObserver.observe(workSection);
-
-
-
-
-
-
