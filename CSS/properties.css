@@ -13,6 +13,11 @@
     padding: 1rem 2rem;
 }
 
+.service .call-now {
+    border: 2px solid !important;
+    color: black !important;
+}
+
 .properties .Our_Listings {
     gap: 1rem 1rem !important;
     margin: 2rem 0 2rem 0 !important;

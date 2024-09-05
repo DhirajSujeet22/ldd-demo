@@ -131,3 +131,9 @@ const workObserver = new IntersectionObserver(
 );
 
 workObserver.observe(workSection);
+
+
+
+
+
+
