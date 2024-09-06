@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="CSS/aboutUs.css" />
   <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/aboutUs.css" />
   <link rel="shortcut icon" href="img/Screenshot_2024-08-27_170534-removebg-preview.png" type="image/x-icon">
   <link rel="stylesheet" href="CSS/index.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -19,7 +19,7 @@
 
   <!-- navbar section  -->
 
-  <nav class="navbar aboutUs">
+  <nav class="navbar aboutus">
     <div class="navbar-logo">
       <a href="index.html">
         <img class="logo" src="img/logo1.jpeg" alt="image_logo" />
@@ -316,8 +316,7 @@
     </footer>
     <!-- Footer Section -->
   </div>
-  <script src="App/index.js"></script>
-
+  <script  src="App/index.js"></script>
   <script>
     const heading = document.getElementById("aboutUs_observation")
     console.log(heading);
@@ -326,11 +325,9 @@
         const [entry] = entries;
         console.log(entry);
         if (entry.isIntersecting) {
-          document.body.classList.add("sticky");
-          // logo.src = "img/logo2.png";
+          document.body.classList.add("about_sticky");
         } else {
-          document.body.classList.remove("sticky");
-          // logo.src = "img/logo2.png";
+          document.body.classList.remove("about_sticky");
         }
       },
       {
@@ -340,9 +337,6 @@
     );
     observer.observe(heading);
   </script>
-
-  <!-- script for stiknav -->
-
 </body>
 
 </html>

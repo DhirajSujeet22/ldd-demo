@@ -9,14 +9,14 @@
 }
 
 /* ============================================= */
-/* .contact {
+.aboutus {
   background: #ffffff;
   padding: 0.5rem 2rem;
   transition: background-color 0.3s, border 0.3s, border-radius 0.3s,
     box-shadow 0.3s;
-} */
+}
 
-.sticky .navbar {
+.about_sticky .navbar {
   position: fixed;
   top: 0;
   background-color: white;
@@ -28,26 +28,18 @@
   box-shadow: 0 0 0.5rem white;
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
 }
-.aboutUs {
-  background: #ffffff !important;
-  position: relative !important;
-}
 
-.aboutUs .navbar-links,
+.aboutus .dropdown-toggle,
 .contactUs {
-  color: #424450 !important;
-}
-
-.aboutUs .dropdown-toggle {
   color: #434750 !important;
 }
 
-.aboutUs .call-now {
+.aboutus .call-now {
   border: 2px solid !important;
   color: black !important;
 }
 
-.aboutUs .burger span {
+.burger span {
   background-color: #424450 !important;
 }
 
@@ -168,6 +160,14 @@ p {
 }
 
 /* Responsive Styles */
+@media (max-width: 1024px) {
+  .about_sticky .navbar {
+    padding: 1rem 2rem;
+  }
+}
+
+/* ----------------------- */
+
 @media (max-width: 768px) {
   .content-section {
     flex-direction: column;

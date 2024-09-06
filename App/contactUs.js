@@ -44,18 +44,14 @@ document
 // ================= Creating Sticky Navbar =========================>
 
 const hading = document.querySelector(".contact_observation");
-console.log(hading);
-// const logo = document.querySelector(".logo");
 const observer = new IntersectionObserver(
   (entries, observe) => {
     const [entry] = entries;
     console.log(entry);
     if (entry.isIntersecting) {
-      document.body.classList.add("stickyness");
-      // logo.src = "img/logo2.png";
+      document.body.classList.add("contact_sticky");
     } else {
-      document.body.classList.remove("stickyness");
-      // logo.src = "img/logo2.png";
+      document.body.classList.remove("contact_sticky");
     }
   },
   {

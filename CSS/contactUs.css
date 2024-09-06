@@ -17,7 +17,7 @@
     box-shadow 0.3s;
 }
 
-.stickyness .navbar {
+.contact_sticky .navbar {
   position: fixed;
   top: 0;
   background-color: white;
@@ -196,11 +196,16 @@
   border: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .contact_sticky .navbar {
+    padding: 1rem 2rem;
+  }
   .contact {
     padding: 1rem 2rem;
   }
+}
 
+@media (max-width: 768px) {
   .banner h1 {
     font-size: 2rem;
   }
