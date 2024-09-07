@@ -2,34 +2,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
+.properties {
+  background: #ffffff;
+  padding: 0.5rem 2rem;
+  transition: background-color 0.3s, border 0.3s, border-radius 0.3s,
+    box-shadow 0.3s;
+}
+
+.properties_sticky .navbar {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  color: #434750 !important;
+  left: 0;
+  z-index: 8;
+  transition: all 0.5s ease;
+  padding: 0rem 2rem;
+  box-shadow: 0 0 0.5rem white;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.properties .dropdown-toggle,
+.contactUs {
+  color: #434750 !important;
+}
+
+.properties .call-now {
+  border: 2px solid !important;
+  color: black !important;
+}
+
+.burger span {
+  background-color: #424450 !important;
+}
 
 .properties .Our_Listingss {
-    padding: 1rem 2rem;
-}
-
-.service .call-now {
-    border: 2px solid !important;
-    color: black !important;
+  padding: 1rem 2rem;
 }
 
 .properties .Our_Listings {
-    gap: 1rem 1rem !important;
-    margin: 2rem 0 2rem 0 !important;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+  gap: 1rem 1rem !important;
+  margin: 2rem 0 2rem 0 !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
 }
 
 .properties .Our_Listings img {
-    border-radius: 0.3rem;
-
+  border-radius: 0.3rem;
 }
 
 .properties .centered-text {
-    font-size: 1rem;
+  font-size: 1rem;
+}
 
+@media (max-width: 1024px) {
+  .properties_sticky .navbar {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .properties_sticky .navbar {
+    padding: 1rem 2rem;
+  }
 }

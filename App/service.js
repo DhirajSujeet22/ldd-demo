@@ -71,3 +71,26 @@ function updateTestimonials() {
 }
 
 setInterval(updateTestimonials, 2000);
+
+// =======================================================
+
+// ================= Creating Sticky Navbar =========================>
+
+const hading = document.querySelector(".service_observation");
+const observer = new IntersectionObserver(
+  (entries, observe) => {
+    const [entry] = entries;
+    console.log(entry);
+    if (entry.isIntersecting) {
+      document.body.classList.add("services_sticky");
+    } else {
+      document.body.classList.remove("services_sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+  }
+);
+
+observer.observe(hading);
