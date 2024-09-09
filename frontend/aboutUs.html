@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="CSS/index.css" />
-  <link rel="stylesheet" href="CSS/contactUs.css" />
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/aboutUs.css" />
   <link rel="shortcut icon" href="img/Screenshot_2024-08-27_170534-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="CSS/index.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Font Awesome CDN link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-xyz12345..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
 
-  <nav class="navbar contact">
+  <!-- navbar section  -->
+
+  <nav class="navbar aboutus">
     <div class="navbar-logo">
       <a href="index.html">
-        <img class="logo" src="IMG/logo1.jpeg" alt="image_logo" />
+        <img class="logo" src="img/logo1.jpeg" alt="image_logo" />
       </a>
     </div>
     <ul class="navbar-links">
@@ -26,7 +30,7 @@
         <a href="#" class="dropdown-toggle">ABOUT US <span class="arrow"> <i
               class="fa-solid fa-angle-down"></i></span></a>
         <ul class="dropdown-menu">
-          <li><a href="aboutUs.html">LDD Reality</a></li>
+          <li><a href="#">LDD Reality</a></li>
         </ul>
       </li>
       <li class="dropdown">
@@ -46,6 +50,7 @@
           <li>
             <a href="servicesPage4.html"> Real Estate Portfolio Management</a>
           </li>
+
         </ul>
       </li>
       <li class="dropdown">
@@ -70,7 +75,7 @@
         </ul>
       </li>
       <li class="dropdown">
-        <a class="contactUs" href="contactUs.html">CONTACT US</a>
+        <a class="contactUs" href="contactUs.html">CONTACT US <span class="arrow"></a>
       </li>
     </ul>
     <div class="navbar-right">
@@ -82,7 +87,9 @@
       <span></span>
     </div>
 
-    <img class="fa-square-whatsapp" src="IMG/what.gif" alt="" />
+    <a href="https://wa.me/9818737542" class="whatsapp-link" target="_blank">
+      <img class="fa-square-whatsapp" src="IMG/what.gif" alt="WhatsApp Logo" />
+    </a>
   </nav>
 
   <!-- Offcanvas Menu -->
@@ -113,6 +120,7 @@
           <li>
             <a href="servicesPage4.html"> Real Estate Portfolio Management</a>
           </li>
+
         </ul>
       </li>
       <li class="dropdown">
@@ -143,71 +151,104 @@
     </ul>
   </div>
 
-
   <!-- Banner Section -->
   <section class="banner">
-    <h1>Contact Us</h1>
+    <div class="banner-text">
+      <h1>About Us</h1>
+      <p>Your trusted partner in innovation.</p>
+    </div>
   </section>
-  
-
-    <!-- Contact Information Section -->
-    <section class="contact-info">
-      <div class="info-box">
-        <i class="fa-solid fa-phone"></i>
-        <h3>Phone</h3>
+  <div id="aboutUs_observation">
+    <!-- First Content Section -->
+    <section class="content-section">
+      <div class="text-content">
+        <h4>Our Mission</h4>
         <p>
-          <a href="tel:9818737542">+91-9818737542</a>
+          We encourage innovative thinking and creative solutions to overcome challenges and seize opportunities.
+        </p>
+        <p>
+          By building a supportive network, we connect people and organizations to share knowledge, skills, and
+          resources.
+        </p>
+        <p>
+          We are committed to personal and professional development, offering tools and guidance to help individuals
+          reach
+          their full potential.
+        </p>
+        <p>
+          We understand that setbacks are part of the journey, and we provide unwavering support to help our community
+          persevere and thrive.
+        </p>
+        <p>
+          We believe that every dream begins with a burst of imagination. Our programs are designed to stimulate
+          innovative thinking and encourage creative problem-solving, helping people envision and pursue their unique
+          goals.
+        </p>
+        <p>
+          Success is often a collaborative effort. By connecting individuals with mentors, peers, and partners, we
+          facilitate a network of support where ideas can flourish, and collective wisdom can be harnessed to overcome
+          challenges.
         </p>
       </div>
-      <div class="info-box">
-        <i class="fa-solid fa-envelope"></i>
-        <h3>Email</h3>
-        <p>
-          <a href="mailto:keshav@lddrealty.com">keshav@lddrealty.com</a>
-        </p>
-      </div>
-      <div class="info-box">
-        <i class="fa-solid fa-location-dot"></i>
-        <h3>Location</h3>
-        <p>
-          <a href="https://maps.app.goo.gl/Tw7Mjt4WvucB6PHL8" target="_blank">Plot no.146, Sector 5 Manesar 122051
-            Gurugram</a>
-        </p>
-      </div>
-      <div class="info">
-        <p>We respect your space & privacy and will connect only, if called and engage only, when consented.</p>
+      <div class="image-content">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1680185462024-449a2abaec28?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Our Mission Image" />
       </div>
     </section>
-    <div class="contact_observation">
 
-    <!-- Contact Form Section -->
-    <section class="contact-form">
-      <form id="contactForm">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <input type="tel" name="mobile" placeholder="Your Number" required />
-        <label for="property-select" class="select-label">Property Type</label>
-        <div class="select-wrapper">
-          <select id="property-select" name="property" class="select-input">
-            <option value="">-- Please Choose an Option --</option>
-            <option value="Residential_Properties">Residential Properties</option>
-            <option value="Commercial_Property">Commercial Property</option>
-            <option value="Retail_Property">Retail Property</option>
-          </select>
-        </div>
-        <textarea placeholder="Your Message" name="Message" rows="12" required></textarea>
-        <button id="btn" type="submit">Submit</button>
-      </form>
+    <!-- Numbered List Section -->
+    <section class="numbered-list-section">
+      <div class="list-item">
+        <span>30 +</span>
+        <p>years</p>
+      </div>
+      <div class="list-item">
+        <span>1,750,000 + </span>
+        <p>Sq. Feet Sold & Leased</p>
+      </div>
+      <div class="list-item">
+        <span>850 + </span>
+        <p>Clients Serviced</p>
+      </div>
+      <div class="list-item">
+        <span>4</span>
+        <p>Sustainability</p>
+      </div>
     </section>
-   
-    <!-- Google Map Section -->
 
-    
-
-    <section class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3510.6881291980853!2d76.922228!3d28.368277!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3f9b68baca6f%3A0x9e8e15d4f73557e7!2sLDD%20BIOSCIENCE%20PVT.%20LTD.!5e0!3m2!1sen!2sin!4v1725537746092!5m2!1sen!2sin"
-        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- Second Content Section -->
+    <section class="content-section">
+      <div class="image-content">
+        <img
+          src="https://images.unsplash.com/photo-1710582307458-f1328c2a7839?&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY4fHxyZWFsJTIwZXN0YXRlfGVufDB8fDB8fHww"
+          alt="Our Values Image" />
+      </div>
+      <div class="text-content">
+        <h4>Our Values</h4>
+        <p>
+          At LDD Reality, integrity is the cornerstone of our business. We are committed to honesty, transparency, and
+          ethical practices in every transaction. Our clients trust us to provide clear, accurate information and to act
+          in their best interests at all times.
+        </p>
+        <p>
+          We strive for excellence in every aspect of our work. From client service to property management, we are
+          dedicated to delivering top-notch results. Our team is continually improving their skills and knowledge to
+          ensure that we meet and exceed industry standards.
+        </p>
+        <p>
+          In a rapidly evolving real estate market, innovation is key. We embrace new technologies and creative
+          solutions
+          to enhance our services and offer our clients the best possible experience. By staying ahead of trends, we
+          provide cutting-edge solutions that address the unique needs of each
+        </p>
+        <p>
+          Our clients are at the heart of everything we do. We listen to their needs, understand their goals, and tailor
+          our services to meet their expectations. Building long-lasting relationships and ensuring client satisfaction
+          is
+          our top priority.
+        </p>
+      </div>
     </section>
 
 
@@ -238,6 +279,7 @@
             <li><a href="#">Residential Properties</a></li>
             <li><a href="#">Retail Properties</a></li>
             <li><a href="#">Commercial Properties</a></li>
+            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
           </ul>
         </div>
         <div class="footer-column">
@@ -275,8 +317,27 @@
     </footer>
     <!-- Footer Section -->
   </div>
-  <script src="App/index.js"></script>
-  <script  src="App/contactUs.js"></script>
+  <script  src="App/index.js"></script>
+  <script>
+    const heading = document.getElementById("aboutUs_observation")
+    console.log(heading);
+    const observer = new IntersectionObserver(
+      (entries, observe) => {
+        const [entry] = entries;
+        console.log(entry);
+        if (entry.isIntersecting) {
+          document.body.classList.add("about_sticky");
+        } else {
+          document.body.classList.remove("about_sticky");
+        }
+      },
+      {
+        root: null,
+        threshold: 0,
+      }
+    );
+    observer.observe(heading);
+  </script>
 </body>
 
 </html>

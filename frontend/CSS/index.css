@@ -748,6 +748,10 @@ Delhi real estate destination css  =============== */
 /* ====================  media query ========================= */
 
 @media (max-width: 1024px) {
+  .sticky .navbar {
+    padding: 1rem 2rem;
+  }
+
   .navbar-links {
     display: none;
   }
@@ -794,10 +798,6 @@ Delhi real estate destination css  =============== */
 /* ---------------------------------------- */
 
 @media (max-width: 768px) {
-  .sticky .navbar {
-    padding: 1rem 2rem;
-  }
-
   .navbar-links {
     display: none;
   }

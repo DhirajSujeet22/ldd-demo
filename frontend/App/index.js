@@ -70,20 +70,15 @@ const AnimationOfNumbers = () => {
       const initialNumber = parseInt(curElem.textContent);
       const targetNumber = parseInt(curElem.dataset.number);
 
-      // Calculate the increment number
-      const incrementNumber = Math.trunc(targetNumber / speed);
-      console.log(incrementNumber);
+      const incrementNumber = Math.ceil(targetNumber / speed);
 
       if (initialNumber < targetNumber) {
-        // Update the text content with the incremented number
         curElem.innerText = `${initialNumber + incrementNumber} +`;
       } else {
-        // If the initial number is greater or equal to the target, clear the interval
         clearInterval(interval);
       }
     };
 
-    // Set an interval and store its ID to clear it later
     const interval = setInterval(updateNumber, 10);
   });
 };

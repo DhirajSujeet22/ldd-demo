@@ -3,17 +3,14 @@
 document
   .getElementById("contactForm")
   .addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the form from submitting the default way
+    event.preventDefault();
 
-    // Get form elements
     const formElements = document.querySelectorAll(
       "#contactForm input, #contactForm textarea"
     );
 
-    // Initialize an object to store user input
     const formData = {};
 
-    // Loop through form elements and collect data
     Array.from(formElements).forEach((element) => {
       const name = element.name;
       const value = element.value;
@@ -38,8 +35,6 @@ document
     // // Redirect to WhatsApp
     // window.location.href = whatsappUrl;
   });
-
-// ==========================================
 
 // ================= Creating Sticky Navbar =========================>
 
