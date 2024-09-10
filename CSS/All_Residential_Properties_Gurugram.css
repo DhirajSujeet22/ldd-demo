@@ -1,0 +1,47 @@
+.dlf_context {
+  text-align: center;
+  padding: 1rem 12%;
+}
+
+.dlf_context h2 {
+  margin: 3rem 0;
+  font-size: 2rem;
+  font-family: "Marcellus SC", serif;
+  color: #4f5354;
+}
+
+.dlf_context p {
+  text-align: start;
+  margin: 2rem 0;
+  padding: 0.5rem 0;
+  color: #c1c2c5;
+  line-height: 1.8rem;
+}
+
+#lists {
+  font-size: 2rem;
+  font-family: "Marcellus SC", serif;
+  color: #4f5354;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .dlf_context h2 {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-family: "Marcellus SC", serif;
+    color: #4f5354;
+  }
+
+  .dlf_context {
+    padding: 1rem 8%;
+  }
+
+  #lists {
+    font-size: 1.4rem;
+  }
+
+  .dlf_context p {
+    font-size: 0.9rem;
+  }
+}
