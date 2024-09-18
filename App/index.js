@@ -7,6 +7,76 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // -------------------------------------------------------
 
+  // ================= data fetching =========================>
+
+  const about_title = document.getElementById("about-title");
+  const aboutContent = document.querySelector(".about-content");
+  const about_btn = document.getElementById("about-btn");
+
+  // ------------------------------------------------------
+
+  const real_title = document.getElementById("real_title");
+  const real_estate = document.querySelector(".real_estate");
+  const real_btn = document.getElementById("real_btn");
+
+  // =================================================================
+
+  async function dataFetch() {
+    try {
+      const response = await fetch("http://localhost:5000/api");
+
+      if (!response.ok) {
+        throw new Error(
+          `Network response was not ok (status ${response.status})`
+        );
+      }
+
+      const data = await response.json();
+
+      // ---------------------------------------------------------
+
+      const { aboutLdd, titles, Gurugram_real_estate } = await data[0];
+      console.log(Gurugram_real_estate);
+
+      // index tiitle changes
+
+      document.getElementById("index_title1").innerText = titles[0].title1;
+      document.getElementById("index_title2").innerHTML = titles[1].title2;
+
+      // ---------------------------------------
+
+      // about ldd changes
+
+      about_title.innerText = aboutLdd[0].title;
+      about_btn.innerText = aboutLdd[5].button;
+      const paragraphs = aboutLdd
+        .slice(1, 5)
+        .map(
+          (item) =>
+            `<p>${item.para1 || item.para2 || item.para3 || item.para4}</p `
+        );
+      aboutContent.innerHTML = paragraphs.join("");
+
+      // ----------------------------------------------------------
+
+      // Gurugram real estate destination  changes
+
+      real_title.innerText = Gurugram_real_estate[0].title;
+      real_btn.innerText = Gurugram_real_estate[5].button;
+      const paragraph = Gurugram_real_estate.slice(1, 5).map(
+        (item) =>
+          `<p>${item.para1 || item.para2 || item.para3 || item.para4}</p `
+      );
+      real_estate.innerHTML = paragraph.join("");
+
+      // ----------------------------------------------------------
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  }
+
+  dataFetch();
+
   // ================= Navbar Hamburger Functionality =========================>
 
   // Toggle offcanvas menu for mobile
@@ -82,29 +152,6 @@ const AnimationOfNumbers = () => {
     const interval = setInterval(updateNumber, 10);
   });
 };
-
-// ================= Creating Sticky Navbar =========================>
-
-// const hading = document.querySelector(".observation");
-// // const logo = document.querySelector(".logo");
-// const observer = new IntersectionObserver(
-//   (entries, observe) => {
-//     const [entry] = entries;
-//     if (entry.isIntersecting) {
-//       document.body.classList.add("sticky");
-//       // logo.src = "img/logo2.png";
-//     } else {
-//       document.body.classList.remove("sticky");
-//       // logo.src = "img/logo2.png";
-//     }
-//   },
-//   {
-//     root: null,
-//     threshold: 0,
-//   }
-// );
-
-// observer.observe(hading);
 
 // ================= Smooth Scrolling Animation for numbers =========================>
 
