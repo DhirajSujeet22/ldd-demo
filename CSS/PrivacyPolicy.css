@@ -9,8 +9,9 @@
 }
 
 .privacy-policy {
-  padding: 0 5rem;
-  margin: 6rem 0 0 0;
+  padding: 1rem 5rem;
+  padding-bottom: 5rem;
+  margin: 5rem 0 0 0;
 }
 
 #contactUsLink {
@@ -26,13 +27,11 @@
 .privacy-policy h3 {
   color: #4caf50;
   margin: 1rem 0;
-  font-family: "Marcellus SC", serif;
 }
 
 .privacy-policy p {
   margin: 1rem 0;
-  font-family: "Marcellus SC", serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 /* Responsive Design */

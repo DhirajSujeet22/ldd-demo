@@ -119,12 +119,11 @@ img {
   max-width: 100% !important;
 }
 
-.content-text .about p {
+.content-text .about li {
   color: #9ea0a6;
   font-size: 0.8rem;
   font-weight: 500;
   margin: 1.5rem 0;
-  text-wrap: balance;
   text-align: start;
   line-height: 1.6rem;
 }
