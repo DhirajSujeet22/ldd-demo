@@ -14,13 +14,15 @@ const testimonials = [
   {
     name: "Amit Singh",
     position: "Dubai",
-    photo: "https://images.unsplash.com/photo-1628264047194-fbef620a1262?w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGluZGlhbiUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D",
+    photo:
+      "https://images.unsplash.com/photo-1628264047194-fbef620a1262?w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGluZGlhbiUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D",
     text: "LDD Realty made my property search hassle-free. Their professional team provided great insights and helped me find the perfect apartment. Highly recommend their services!",
   },
   {
     name: " Neha Gupta",
-    position: "Goa, India",
-    photo: "https://plus.unsplash.com/premium_photo-1682092039530-584ae1d9da7f?w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGluZGlhbiUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D",
+    position: "Delhi Ncr, India",
+    photo:
+      "https://plus.unsplash.com/premium_photo-1682092039530-584ae1d9da7f?w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGluZGlhbiUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D",
     text: "I am incredibly grateful to LDD Realty for their assistance in buying my first home. Their knowledge of the market and commitment to client satisfaction is truly commendable!",
   },
 ];
